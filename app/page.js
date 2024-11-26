@@ -1,101 +1,185 @@
-import Image from "next/image";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <Header />
+      <main className="bg-white">
+        <section className="text-center py-52 px-40">
+          <h1 className="text-4xl font-bold text-gray-800">
+            Cultivating Technological Leaders Through{" "}
+            <span className="text-[#3A91E2]">Advanced Research</span>,
+            Collaboration, and{" "}
+            <span className="text-[#3A91E2]">Education </span>Excellence
+          </h1>
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+            Join a dynamic program that leads the future of autonomous systems
+            engineering. Our hands-on approach combines cutting-edge research,
+            state-of-the-art labs, and real-world projects to equip you with the
+            skills to design, build, and innovate autonomous technologies
+          </p>
+          <div className="flex justify-center space-x-4 mt-8">
+            <button className="text-[#20212A] text-sm font-bold px-4 py-2 rounded-xl border-[1.42px] border-[#20212A] hover:bg-gray-100">
+              Log in to Your account
+            </button>
+            <button className="text-[#20212A] text-sm font-bold px-4 py-2 rounded-xl border-[1.42px] border-[#20212A] hover:bg-gray-100">
+              Discover More
+            </button>
+          </div>
+        </section>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+        <section className="flex flex-col md:flex-row py-16 shadow-md px-8 md:px-16">
+          <div className="md:w-1/2 p-4">
+            <img
+              src="/path/to/school-image.jpg"
+              alt="School Image"
+              className="rounded-lg shadow-md"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
+          </div>
+          <div className="md:w-1/2 p-4">
+            <h2 className="text-2xl font-bold text-[#7AB3E1]">Description</h2>
+            <p className="text-gray-600 mt-4">
+              Explore the cutting-edge world of innovation at The national
+              school of autonomous systems in our introductory video! Get an
+              inside look at our state-of-the-art campus, advanced labs, and the
+              diverse subjects we offer, from engineering and computer science
+              to autonomous systems and technology leadership. Discover how we
+              equip students with the skills and knowledge to thrive in the
+              rapidly evolving fields of technology
+            </p>
+            <a href="#" className="text-[#3A91E2] mt-4 inline-block">
+              Learn More About Us &rarr;
+            </a>
+          </div>
+        </section>
+
+        <section className="bg-gray-900 text-white py-16 px-8">
+          <h2 className="text-3xl font-bold">About The School</h2>
+          <p className="mt-4 max-w-2xl">
+            The National Higher School of Autonomous Systems is an institution
+            of excellence dedicated to the education and training of engineers
+            specializing in robotics and Autonomous systems. Our mission is to
+            equip future professionals with the skills to design, develop, and
+            implement intelligent autonomous solutions across a range of
+            sectors, including manufacturing, transportation, healthcare, and
+            energy. By fostering a deep understanding of autonomous systems,
+            control algorithms, and hardware integration, our graduates will
+            contribute to the scientific advancement and technological
+            innovation driving Algeria's socio-economic development.
+          </p>
+        </section>
+
+        <section className="px-8 py-16">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">News</h2>
+          <p className="text-gray-600 mb-12">
+            Where we share the latest updates, breakthroughs, and achievements
+          </p>
+
+          <div className="flex justify-center mb-8 space-x-4">
+            {[
+              "Announcement",
+              "Clubs",
+              "Recruitments",
+              "Administration",
+              "Professors",
+              "Students",
+            ].map((category) => (
+              <button
+                key={category}
+                className="px-4 py-2 text-sm font-semibold text-gray-700 border border-gray-300 rounded-lg hover:bg-gray-100"
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-8">
+            <div className="bg-[#F5F5F5] py-8 px-6 rounded-[44px] shadow-md w-[33%] flex flex-col justify-center">
+              <h3 className="text-lg font-bold text-gray-800 mb-2">
+                Welcome to Our New Batch of Students!
+              </h3>
+              <p className="text-gray-600 mb-4">
+                We are excited to welcome our newest group of students for the
+                2024 academic year! Get ready for an exciting journey into the
+                world of robotics and embedded systems.
+              </p>
+              <a
+                href="#"
+                className="text-[#3A91E2] font-semibold hover:underline"
+              >
+                Read More →
+              </a>
+            </div>
+
+            <div className="bg-[#F5F5F5] py-8 px-6 rounded-[44px] shadow-md w-[62%] flex flex-col justify-center">
+              <h3 className="text-lg font-bold text-gray-800 mb-2">
+                Students Organize Robotics Hackathon
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Our students are hosting a 48-hour robotics hackathon this
+                weekend! Teams will compete to create the most innovative
+                autonomous systems—don't miss it!
+              </p>
+              <a
+                href="#"
+                className="text-[#3A91E2] font-semibold hover:underline"
+              >
+                Read More →
+              </a>
+            </div>
+
+            <div className="bg-[#F5F5F5] py-8 px-6 rounded-[44px] shadow-md w-[62%] flex flex-col justify-center">
+              <h3 className="text-lg font-bold text-gray-800 mb-2">
+                Professor Random Publishes New Paper on Advanced Robotics
+                Control Systems
+              </h3>
+              <p className="text-gray-600 mb-4">
+                Congratulations to Professor Hamid for his latest publication in
+                the Journal of Autonomous Systems. His research on advanced
+                control algorithms is set to make waves in the field of
+                robotics!
+              </p>
+              <a
+                href="#"
+                className="text-[#3A91E2] font-semibold hover:underline"
+              >
+                Read More →
+              </a>
+            </div>
+
+            <div className="bg-[#F5F5F5] py-8 px-6 rounded-[44px] shadow-md w-[33%] flex flex-col justify-center">
+              <h3 className="text-lg font-bold text-gray-800 mb-2">
+                New Administrative Office Hours Announced
+              </h3>
+              <p className="text-gray-600 mb-4">
+                The school administration has updated its office hours to better
+                serve students and faculty. The office will now be open from 8
+                AM to 6 PM, Monday through Friday, to assist with all
+                administrative needs, including enrollment and academic
+                advising.
+              </p>
+              <a
+                href="#"
+                className="text-[#3A91E2] font-semibold hover:underline"
+              >
+                Read More →
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16 px-8">
+          <h2 className="text-3xl font-bold text-gray-800">Campus Life</h2>
+          <p className="text-gray-600 mt-4">
+            Experience vibrant campus life where innovation meets community!
+            Beyond academics, our campus offers a rich environment for personal
+            growth and collaboration. With state-of-the-art facilities, student
+            clubs
+          </p>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      <Footer />
+    </>
   );
 }
