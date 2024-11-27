@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import auth from '@/app/auth/page.js';
 
 export default function Header() {
   return (
@@ -19,7 +20,12 @@ export default function Header() {
         </nav>
         <div className="flex space-x-4">
         <button className="hidden md:inline border-[#3A91E2] border-[1.5px] text-[#3A91E2] font-semibold px-6 py-2 rounded-2xl">English</button>
-        <button className="hidden md:inline bg-[#3A91E2] text-white font-semibold px-6 py-2 rounded-2xl">Platform</button>
+          <Link href="auth">
+            <button className="hidden md:inline bg-[#3A91E2] text-white font-semibold px-6 py-2 rounded-2xl">
+              Platform
+            </button>
+          </Link>
+
         </div>
       </div>
     </header>

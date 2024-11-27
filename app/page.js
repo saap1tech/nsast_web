@@ -1,5 +1,9 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import styles from './page.module.css'
+import {projects} from './src/data';
+import Card from './components/Card';
+
 
 export default function Home() {
   return (
@@ -32,14 +36,14 @@ export default function Home() {
         <section className="flex flex-col md:flex-row py-16 shadow-md px-8 md:px-16">
           <div className="md:w-1/2 p-4">
             <img
-              src="/path/to/school-image.jpg"
+              src="/school.jpg"
               alt="School Image"
               className="rounded-lg shadow-md"
             />
           </div>
           <div className="md:w-1/2 p-4">
             <h2 className="text-2xl font-bold text-[#7AB3E1]">Description</h2>
-            <p className="text-gray-600 mt-4">
+            <p className="text-gray-600 text-2xl mt-4">
               Explore the cutting-edge world of innovation at The national
               school of autonomous systems in our introductory video! Get an
               inside look at our state-of-the-art campus, advanced labs, and the
@@ -170,13 +174,27 @@ export default function Home() {
         </section>
 
         <section className="py-16 px-8">
-          <h2 className="text-3xl font-bold text-gray-800">Campus Life</h2>
+          <h2 className="text-4xl font-bold text-center text-gray-800">Campus Life</h2>
           <p className="text-gray-600 mt-4">
             Experience vibrant campus life where innovation meets community!
             Beyond academics, our campus offers a rich environment for personal
             growth and collaboration. With state-of-the-art facilities, student
             clubs
           </p>
+          
+          <main className={styles.main}>
+
+      {
+
+        projects.map( (project, i) => {
+
+          return <Card key={`p_${i}`} {...project} i={i}/>
+
+        })
+
+      }
+
+    </main>
         </section>
       </main>
       <Footer />
