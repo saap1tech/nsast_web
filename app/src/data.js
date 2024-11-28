@@ -1,31 +1,31 @@
 export const projects = [
     {
-      title: "school",
+      title: "SCHOOL",
       description: "SCHOOL",
       src: "school.jpg",
       link: "#",
-      color: "#BBACAF"
+      color: "#010280"
     },
     {
         title: "school",
         description: "SCHOOL",
         src: "school.jpg",
         link: "#",
-        color: "#D4EBF8"
+        color: "#061993"
       },
       {
         title: "school",
         description: "SCHOOL",
         src: "school.jpg",
         link: "#",
-        color: "#0A3981"
+        color: "#0C3BAA"
       },
       {
         title: "school",
         description: "SCHOOL",
         src: "school.jpg",
         link: "#",
-        color: "#1F509A"
+        color: "#135CC5"
       },
       
   ]
