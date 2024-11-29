@@ -13,9 +13,6 @@ export default function Home() {
   
   return (
     <>
-    <button type="button" onClick={() => router.push('/dashboard')}>
-      Dashboard
-    </button>
       <Header />
       <main className="bg-white">
         <section className="text-center py-52 px-40">

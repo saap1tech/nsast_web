@@ -8,16 +8,44 @@ export default function Auth() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    // Implement your login logic here
-    console.log("Email:", email);
-    console.log("Password:", password);
+  
+    try {
+      const response = await fetch("/api/auth/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
+  
+      if (!response.ok) {
+        // Handle server-side errors
+        const errorData = await response.json();
+        console.error("Error from server:", errorData);
+        alert(errorData.error || "Login failed");
+        return;
+      }
+  
+      const data = await response.json(); // Parse successful response
+      console.log("Login successful:", data);
+  
+      // Example: Store the token and redirect
+      localStorage.setItem("token", data.token);
+      alert("Login successful!");
+      window.location.href = "/"; // Redirect to dashboard
+    } catch (error) {
+      // Catch network or unexpected errors
+      console.error("Unexpected error during login:", error);
+      alert("An unexpected error occurred. Please try again.");
+    }
   };
+  
 
   return (
     <>
-      <Header />
+    <Header />
       <main className="bg-white">
         <section className="flex items-center justify-center h-screen">
           <div className="p-8 w-full max-w-md">
