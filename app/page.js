@@ -74,8 +74,8 @@ export default function Home() {
               sectors, including manufacturing, transportation, healthcare, and
               energy. By fostering a deep understanding of autonomous systems,
               control algorithms, and hardware integration, our graduates will
-              contribute to the scientific advancement and technological
-              innovation driving Algeria's socio-economic development.
+              contribute to the scientific  advancement and technological
+              innovation driving Algeria's s socio-economic development.
             </p>
 
         </section>
