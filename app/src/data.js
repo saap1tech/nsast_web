@@ -9,7 +9,7 @@ export const projects = [
     {
         title: "school",
         description: "SCHOOL",
-        src: "school.jpg",
+        src: "IMG20240208164053.jpg",
         link: "#",
         color: "#061993"
       },

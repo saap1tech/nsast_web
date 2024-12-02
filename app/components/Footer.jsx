@@ -19,31 +19,37 @@ export default function Footer() {
             </div>
             <div>
               <h2 className="text-lg font-bold">Follow Us</h2>
-              <div className="flex space-x-4">
-              <a href="#" className="text-sm relative group">
-  Facebook
-  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all group-hover:w-full"></span>
-</a>
-<a href="#" className="text-sm relative group">
-  Twitter
-  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all group-hover:w-full"></span>
-</a>
-<a href="" className="text-sm relative group">
-  LinkedIn
-  <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all group-hover:w-full"></span>
-</a>
+              <div className="flex flex-col space-y-4">
+  <ul>
+    <a href="#" className="text-sm relative group">
+      Facebook
+      <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all group-hover:w-full"></span>
+    </a>
+  </ul>
+  <ul>
+    <a href="#" className="text-sm relative group">
+      Twitter
+      <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all group-hover:w-full"></span>
+    </a>
+  </ul>
+  <ul>
+    <a href="#" className="text-sm relative group">
+      LinkedIn
+      <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all group-hover:w-full"></span>
+    </a>
+  </ul>
+</div>
 
-              </div>
             </div>
             <div>
   <h2 className="text-lg font-bold">Helpful Links</h2>
   <ul className="space-y-1 text-sm">
-    <li>
+    <ul>
       <a href="#" className="relative group">
         News
         <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-blue-500 transition-all group-hover:w-full"></span>
       </a>
-    </li>
+    </ul>
     <li>
       <a href="#" className="relative group">
         Scholarships
