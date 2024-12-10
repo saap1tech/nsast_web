@@ -32,9 +32,9 @@ export default function Header() {
         aria-hidden="true"
       >
         {[...Array(10)].map((_, index) => (
-          <div
+          <div color='blue'
             key={index}
-            className={`star absolute bg-gradient-to-r from-yellow-400 to-pink-500 rounded-full`}
+            className={`star absolute bg-gradient-to-r from-blue-400 to-[#B6EBFF]-600 rounded-full`}
           ></div>
         ))}
       </div>

@@ -37,10 +37,7 @@ export default function Home() {
             <span className="text-[#3A91E2]">Education </span>Excellence
           </h1>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            Join a dynamic program that leads the future of autonomous systems
-            engineering. Our hands-on approach combines cutting-edge research,
-            state-of-the-art labs, and real-world projects to equip you with the
-            skills to design, build, and innovate autonomous technologies
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
           </p>
           <div className="flex justify-center space-x-4 mt-8">
             <button className="text-[#20212A]hidden md:inline border-[#20212A] border-[1.5px] text-[#20212A] font-semibold px-6 py-2 rounded-2xl transition-shadow duration-300 hover:shadow-[0_0_15px_#20212A]">
@@ -76,13 +73,7 @@ export default function Home() {
           <div className="md:w-1/2 p-4">
             <h2 className="text-4xl font-bold text-[#7AB3E1]">Description</h2>
             <p className="text-gray-600 text-2xl mt-4">
-              Explore the cutting-edge world of innovation at The national
-              school of autonomous systems in our introductory video! Get an
-              inside look at our state-of-the-art campus, advanced labs, and the
-              diverse subjects we offer, from engineering and computer science
-              to autonomous systems and technology leadership. Discover how we
-              equip students with the skills and knowledge to thrive in the
-              rapidly evolving fields of technology
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             </p>
             <a href="e-hub" className="text-[#3A91E2] mt-4 inline-block">
               Learn More About Us &rarr;
@@ -95,13 +86,7 @@ export default function Home() {
         <div className="md:w-1/2 p-4">
           <h1 className="text-4xl pl-[15px] font-bold mb-4">About The School</h1>
          <p className="mt-4 max-w-2xl mx-auto text-2xl">
-        The National Higher School of Autonomous Systems is an institution
-        of excellence dedicated to the education and training of engineers
-        specializing in robotics and Autonomous systems. Our mission is to
-        equip future professionals with the skills to design, develop, and
-        implement intelligent autonomous solutions across a range of
-       sectors, including manufacturing, transportation, healthcare, and
-       energy.
+      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </p>
         </div>
 
