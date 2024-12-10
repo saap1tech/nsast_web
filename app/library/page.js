@@ -1,7 +1,8 @@
-'use client'
+"use client"
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import AddBookForm from "../components/AddBookForm";
 
 export default function Library() {
   const [books, setBooks] = useState([]);
@@ -27,12 +28,18 @@ export default function Library() {
     fetchBooks();
   }, []);
 
+  // Handler to add a new book to the state
+  const handleBookAdded = (newBook) => {
+    setBooks((prevBooks) => [newBook, ...prevBooks]);
+  };
+
   return (
     <>
       <Header />
       <main className="bg-white">
         <div className="p-5">
           <section className="bg-[#ECEFF5] rounded-3xl mx-10 p-4">
+            
             <div className="flex items-center justify-between">
               <div className="text-2xl font-extrabold text-black">Recommended</div>
               <a
@@ -76,4 +83,3 @@ export default function Library() {
     </>
   );
 }
-
