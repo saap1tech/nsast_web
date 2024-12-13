@@ -1,5 +1,6 @@
 "use client";
-
+import Header from "/app/components/Header";
+import Footer from "/app/components/Footer";
 import { useState } from "react";
 
 export default function AddBookForm({ onBookAdded }) {
@@ -45,16 +46,18 @@ export default function AddBookForm({ onBookAdded }) {
   };
 
   return (
+    
     <form onSubmit={handleSubmit} className="mb-5 bg-gray-100 p-4 rounded-lg">
       <h2 className="text-xl font-bold mb-4">Add a New Book</h2>
       {error && <p className="text-red-500">{error}</p>}
       <div className="mb-3">
         <label className="block text-sm font-medium mb-1">Title:</label>
         <input
+          
           type="text"
           value={title}
           onChange={(e) => setTitle(e.target.value)}
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded text-black"
           placeholder="Enter book title"
         />
       </div>
@@ -64,7 +67,7 @@ export default function AddBookForm({ onBookAdded }) {
           type="text"
           value={author}
           onChange={(e) => setAuthor(e.target.value)}
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded text-black"
           placeholder="Enter author name"
         />
       </div>
@@ -74,7 +77,7 @@ export default function AddBookForm({ onBookAdded }) {
           type="text"
           value={image}
           onChange={(e) => setImage(e.target.value)}
-          className="w-full p-2 border rounded"
+          className="w-full p-2 border rounded text-black"
           placeholder="Enter image URL"
         />
       </div>

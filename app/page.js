@@ -2,8 +2,8 @@
 import InteractiveGrid from "./components/animata/background/interactive-grid";
 import BlurryBlob from "./components/animata/background/blurry-blob";
 import { redirect } from 'next/navigation'
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import Header from "/app/components/Header";
+import Footer from "/app/components/Footer";
 import styles from './page.module.css'
 import {projects} from './src/data';
 import Card from './components/Card';
