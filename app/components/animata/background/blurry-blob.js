@@ -41,8 +41,8 @@ export default function BlurryBlob({ className, firstBlobColor, secondBlobColor 
       <div className="relative w-full max-w-lg">
         <div
          style={{
-            width: '100px',  // Set width of the blob
-            height: '100px', // Set height of the blob
+            width: '100px',  
+            height: '100px', 
             animation: 'blobMovement 10s ease-in-out infinite',
             top: '0',
             left: '0',
