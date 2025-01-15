@@ -40,7 +40,7 @@ export default function Header() {
       </div>
     </div>
       
-      <Link href="/" className="group relative">
+      <Link href="library" className="group relative">
         <span className="text-gray-700 hover:text-blue-600">Library</span>
         <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
       </Link>
