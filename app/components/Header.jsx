@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import auth from '@/app/auth/page.js';
+
 
 export default function Header() {
   return (
