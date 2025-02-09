@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 'use client'
+=======
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import styles from './page.module.css'
+import {projects} from './src/data';
+import Card from './components/Card';
+>>>>>>> parent of a2410a8 (added api and dome modicfications)
 
 import InteractiveGrid from "./components/animata/background/interactive-grid";
 import BlurryBlob from "./components/animata/background/blurry-blob";
@@ -14,6 +22,7 @@ export default function Home() {
       <Header />
 
       <main className="bg-white">
+<<<<<<< HEAD
         <div className="relative">
           <section className="text-center py-52 px-40">
             <h1 className="text-4xl font-bold text-gray-800">
@@ -43,6 +52,30 @@ export default function Home() {
             />
           </section>
         </div>
+=======
+        <section className="text-center py-52 px-40">
+          <h1 className="text-4xl font-bold text-gray-800">
+            Cultivating Technological Leaders Through{" "}
+            <span className="text-[#3A91E2]">Advanced Research</span>,
+            Collaboration, and{" "}
+            <span className="text-[#3A91E2]">Education </span>Excellence
+          </h1>
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+            Join a dynamic program that leads the future of autonomous systems
+            engineering. Our hands-on approach combines cutting-edge research,
+            state-of-the-art labs, and real-world projects to equip you with the
+            skills to design, build, and innovate autonomous technologies
+          </p>
+          <div className="flex justify-center space-x-4 mt-8">
+            <button className="text-[#20212A] text-sm font-bold px-4 py-2 rounded-xl border-[1.42px] border-[#20212A] hover:bg-gray-100">
+              Log in to Your account
+            </button>
+            <button className="text-[#20212A] text-sm font-bold px-4 py-2 rounded-xl border-[1.42px] border-[#20212A] hover:bg-gray-100">
+              Discover More
+            </button>
+          </div>
+        </section>
+>>>>>>> parent of a2410a8 (added api and dome modicfications)
 
         <section className="flex flex-col md:flex-row py-16 shadow-md px-8 md:px-16">
           <div className="md:w-1/2 p-4">
@@ -53,18 +86,19 @@ export default function Home() {
             />
           </div>
           <div className="md:w-1/2 p-4">
-            <h2 className="text-4xl font-bold text-[#7AB3E1]">Description</h2>
+            <h2 className="text-2xl font-bold text-[#7AB3E1]">Description</h2>
             <p className="text-gray-600 text-2xl mt-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting
               industry...
             </p>
-            <a href="e-hub" className="text-[#3A91E2] mt-4 inline-block">
+            <a href="#" className="text-[#3A91E2] mt-4 inline-block">
               Learn More About Us &rarr;
             </a>
           </div>
         </section>
 
         <section className="bg-gray-900 text-white py-16 px-8">
+<<<<<<< HEAD
           <div className="flex items-center">
             <div className="md:w-1/2 p-4">
               <h1 className="text-4xl pl-[15px] font-bold mb-4">About The School</h1>
@@ -73,6 +107,21 @@ export default function Home() {
                 industry...
               </p>
             </div>
+=======
+          <h2 className="text-3xl text-center font-bold">About The School</h2>
+          <p className="mt-4 text-center max-w-2xl mx-auto">
+  The National Higher School of Autonomous Systems is an institution
+  of excellence dedicated to the education and training of engineers
+  specializing in robotics and Autonomous systems. Our mission is to
+  equip future professionals with the skills to design, develop, and
+  implement intelligent autonomous solutions across a range of
+  sectors, including manufacturing, transportation, healthcare, and
+  energy. By fostering a deep understanding of autonomous systems,
+  control algorithms, and hardware integration, our graduates will
+  contribute to the scientific advancement and technological
+  innovation driving Algeria's socio-economic development.
+</p>
+>>>>>>> parent of a2410a8 (added api and dome modicfications)
 
             <div className="md:w-1/2 p-4 ml-auto">
               <img
@@ -85,9 +134,16 @@ export default function Home() {
         </section>
 
         <section className="px-8 py-16">
+<<<<<<< HEAD
           <h2 className="relative pl-[6px] text-4xl font-bold text-gray-800 mb-6 after:content-[''] after:block after:h-1 after:bg-[#3A91E2] after:rounded-full after:w-16 after:mt-2">
             News
           </h2>
+=======
+  <h2 className="text-4xl font-bold text-gray-800 text-center mb-6">News</h2>
+  <p className="text-gray-600 text-center mb-12">
+    Where we share the latest updates, breakthroughs, and achievements
+  </p>
+>>>>>>> parent of a2410a8 (added api and dome modicfications)
 
           <p className="text-gray-600 mb-12 relative pl-[6px]">
             Where we share the latest updates, breakthroughs, and achievements

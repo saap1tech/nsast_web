@@ -1,15 +1,6 @@
-"use client"
-import Link from 'next/link';
 import Image from "next/image";
 
-import { Fragment, useState, useEffect } from "react";
-
 export default function Footer() {
-  const [year, setYear] = useState(new Date().getFullYear());
-
-  useEffect(() => {
-    // Update the year when the component mounts
-    setYear(new Date().getFullYear());}, []);
     return (
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-4 md:px-8">
@@ -19,6 +10,7 @@ export default function Footer() {
             </div>
             <div>
               <h2 className="text-lg font-bold">Follow Us</h2>
+<<<<<<< HEAD
               <div className="flex flex-col space-y-4">
   <ul>
     <a href="#" className="text-sm relative group">
@@ -73,16 +65,33 @@ export default function Footer() {
   </address>
 </div>
 
+=======
+              <div className="flex space-x-4">
+                <a href="#" className="text-sm">Facebook</a>
+                <a href="#" className="text-sm">Twitter</a>
+                <a href="#" className="text-sm">LinkedIn</a>
+              </div>
+            </div>
+            <div>
+              <h2 className="text-lg font-bold">Helpful Links</h2>
+              <ul className="space-y-1 text-sm">
+                <li><a href="#">News</a></li>
+                <li><a href="#">Scholarships</a></li>
+                <li><a href="#">Conferences</a></li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="text-lg font-bold">Contacts</h2>
+              <address className="text-sm not-italic">
+                Email: contact@nsast.edu<br />
+                Phone: +123 456 789
+              </address>
+            </div>
+>>>>>>> parent of a2410a8 (added api and dome modicfications)
           </div>
-          
-          <Fragment>
-          <div className="pt-lg-10 pt-5 footer text-center">
-       
-          <p>{`© ${year} NSAST. All Rights Reserved.`}</p>
-        
-        </div>
-    </Fragment>
+          <p className="text-center text-xs mt-4">© 2024 NSAST - All rights reserved.</p>
         </div>
       </footer>
     );
   }
+  
