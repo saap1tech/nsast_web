@@ -12,7 +12,7 @@ export default function Card({ image, title, description, buttonText }) {
         <h5 className="text-xl font-semibold mb-2 text-gray-800">{title}</h5>
         <p className="text-gray-600 mb-4">{description}</p>
         <a
-      href={link} // link here will be the URL you want to redirect to
+      // link here will be the URL you want to redirect to
       target="_blank" // This ensures the link opens in a new tab
       rel="noopener noreferrer" // Security feature for opening external links
     >

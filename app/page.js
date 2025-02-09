@@ -4,9 +4,9 @@ import InteractiveGrid from "./components/animata/background/interactive-grid";
 import BlurryBlob from "./components/animata/background/blurry-blob";
 import Header from "/app/components/Header";
 import Footer from "/app/components/Footer";
-import styles from './page.module.css'; // Ensure correct path
-import { projects } from './src/data'; // Ensure correct path
-import Card from './components/Card'; // Ensure correct path
+import styles from './page.module.css'; 
+import { projects } from './src/data'; 
+import Card from './components/Card'; 
 
 export default function Home() {
   return (
