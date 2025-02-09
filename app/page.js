@@ -1,13 +1,9 @@
-
-
-'use client';
-
-import Header from './components/Header';
-import Footer from './components/Footer';
-import styles from './page.module.css';
-import { projects } from './src/data';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import styles from './page.module.css'
+import {projects} from './src/data';
 import Card from './components/Card';
-import BlurryBlob from './components/animata/background/blurry-blob';
+
 
 export default function Home() {
   return (
@@ -61,15 +57,20 @@ export default function Home() {
           <div className="md:w-1/2 p-4">
             <img
               src="/school.jpg"
-              alt="School Campus"
+              alt="School Image"
               className="rounded-lg shadow-md"
             />
           </div>
           <div className="md:w-1/2 p-4">
             <h2 className="text-2xl font-bold text-[#7AB3E1]">Description</h2>
             <p className="text-gray-600 text-2xl mt-4">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry...
+              Explore the cutting-edge world of innovation at The national
+              school of autonomous systems in our introductory video! Get an
+              inside look at our state-of-the-art campus, advanced labs, and the
+              diverse subjects we offer, from engineering and computer science
+              to autonomous systems and technology leadership. Discover how we
+              equip students with the skills and knowledge to thrive in the
+              rapidly evolving fields of technology
             </p>
             <a href="#" className="text-[#3A91E2] mt-4 inline-block">
               Learn More About Us &rarr;
@@ -135,17 +136,24 @@ export default function Home() {
 
         {/* Campus Life Section */}
         <section className="py-16 px-8">
-          <h2 className="text-4xl font-bold text-gray-800 mb-6 relative pl-[3px] after:content-[''] after:block after:h-1 after:bg-[#3A91E2] after:rounded-full after:w-16 after:mt-2">
-            Campus Life
-          </h2>
+          <h2 className="text-4xl font-bold text-center text-gray-800">Campus Life</h2>
           <p className="text-gray-600 mt-4">
             Experience vibrant campus life where innovation meets community!
           </p>
+          
           <main className={styles.main}>
-            {projects.map((project, i) => (
-              <Card key={`p_${i}`} {...project} i={i} />
-            ))}
-          </main>
+
+      {
+
+        projects.map( (project, i) => {
+
+          return <Card key={`p_${i}`} {...project} i={i}/>
+
+        })
+
+      }
+
+    </main>
         </section>
       </main>
       <Footer />

@@ -1,6 +1,9 @@
 import Image from 'next/image';
 import Link from 'next/link';
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of 847cc4f (added card in campus life)
 
 export default function Header() {
   return (
@@ -58,6 +61,7 @@ export default function Header() {
       </Link>
         </nav>
         <div className="flex space-x-4">
+<<<<<<< HEAD
         <button className="hidden md:inline border-[#3A91E2] border-[1.5px] text-[#3A91E2] font-semibold px-6 py-2 rounded-2xl transition-shadow duration-300 hover:shadow-[0_0_15px_#3A91E2]">
           Sign-up
         </button>
@@ -68,6 +72,10 @@ export default function Header() {
         </Link>
 
 
+=======
+        <button className="hidden md:inline border-[#3A91E2] border-[1.5px] text-[#3A91E2] font-semibold px-6 py-2 rounded-2xl">English</button>
+        <button className="hidden md:inline bg-[#3A91E2] text-white font-semibold px-6 py-2 rounded-2xl">Platform</button>
+>>>>>>> parent of 847cc4f (added card in campus life)
         </div>
       </div>
     </header>
