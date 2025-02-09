@@ -1,6 +1,6 @@
-<<<<<<< HEAD
+
 'use client'
-=======
+
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import styles from './page.module.css'
@@ -22,7 +22,7 @@ export default function Home() {
       <Header />
 
       <main className="bg-white">
-<<<<<<< HEAD
+
         <div className="relative">
           <section className="text-center py-52 px-40">
             <h1 className="text-4xl font-bold text-gray-800">
@@ -52,7 +52,7 @@ export default function Home() {
             />
           </section>
         </div>
-=======
+
         <section className="text-center py-52 px-40">
           <h1 className="text-4xl font-bold text-gray-800">
             Cultivating Technological Leaders Through{" "}
@@ -75,7 +75,7 @@ export default function Home() {
             </button>
           </div>
         </section>
->>>>>>> parent of a2410a8 (added api and dome modicfications)
+
 
         <section className="flex flex-col md:flex-row py-16 shadow-md px-8 md:px-16">
           <div className="md:w-1/2 p-4">
@@ -98,7 +98,6 @@ export default function Home() {
         </section>
 
         <section className="bg-gray-900 text-white py-16 px-8">
-<<<<<<< HEAD
           <div className="flex items-center">
             <div className="md:w-1/2 p-4">
               <h1 className="text-4xl pl-[15px] font-bold mb-4">About The School</h1>
